@@ -55,16 +55,21 @@ For AWS DeepRacer, an episode begins at the initial state, when the car leaves t
 In a reinforcement learning model, an agent learns in an interactive real-time environment by trial and error using feedback from its own actions. Feedback is given in the form of rewards.
 
 Summary
-AWS DeepRacer may be autonomous, but you still have an important role to play in the success of your model. In this section, we introduce the training algorithm, action space, hyperparameters, and reward function and discuss how your ideas make a difference.
+AWS DeepRacer may be autonomous, but you still have an important role to play in the success of your model. 
+In this section, we introduce the training algorithm, action space, hyperparameters, and reward function and discuss how your ideas make a difference.
 
-An algorithm is a set of instructions that tells a computer what to do. ML is special because it enables computers to learn without being explicitly programmed to do so.
-The training algorithm defines your model’s learning objective, which is to maximize total cumulative reward. Different algorithms have different strategies for going about this.
+An algorithm is a set of instructions that tells a computer what to do.
+ML is special because it enables computers to learn without being explicitly programmed to do so.
+The training algorithm defines your model’s learning objective, which is to maximize total cumulative reward. 
+Different algorithms have different strategies for going about this.
 A soft actor critic (SAC) embraces exploration and is data-efficient, but can lack stability.
 A proximal policy optimization (PPO) is stable but data-hungry.
 An action space is the set of all valid actions, or choices, available to an agent as it interacts with an environment.
 Discrete action space represents all of an agent's possible actions for each state in a finite set of steering angle and throttle value combinations.
 Continuous action space allows the agent to select an action from a range of values that you define for each sta te.
-Hyperparameters are variables that control the performance of your agent during training. There is a variety of different categories with which to experiment. Change the values to increase or decrease the influence of different parts of your model.
-For example, the learning rate is a hyperparameter that controls how many new experiences are counted in learning at each step. A higher learning rate results in faster training but may reduce the model’s quality.
+Hyperparameters are variables that control the performance of your agent during training. 
+There is a variety of different categories with which to experiment. Change the values to increase or decrease the influence of different parts of your model.
+For example, the learning rate is a hyperparameter that controls how many new experiences are counted in learning at each step.
+A higher learning rate results in faster training but may reduce the model’s quality.
 The reward function's purpose is to encourage the agent to reach its goal. Figuring out how to reward which actions is one of your most important jobs.
 
