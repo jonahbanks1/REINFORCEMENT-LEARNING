@@ -51,8 +51,10 @@ A reward function is an incentive plan that assigns scores as rewards to differe
 Episode
 
 An episode represents a period of trial and error when an agent makes decisions and gets feedback from its environment.
-For AWS DeepRacer, an episode begins at the initial state, when the car leaves the starting position, and ends at the terminal state, when it finishes a lap, bumps into an obstacle, or drives off the track.
-In a reinforcement learning model, an agent learns in an interactive real-time environment by trial and error using feedback from its own actions. Feedback is given in the form of rewards.
+For AWS DeepRacer, an episode begins at the initial state, when the car leaves the starting position, and ends at the terminal state,
+when it finishes a lap, bumps into an obstacle, or drives off the track.
+In a reinforcement learning model, an agent learns in an interactive real-time environment by trial and error using feedback from its own actions.
+Feedback is given in the form of rewards.
 
 Summary
 AWS DeepRacer may be autonomous, but you still have an important role to play in the success of your model. 
